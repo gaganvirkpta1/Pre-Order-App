@@ -6,10 +6,13 @@
   "scripts": {
     "start": "node src/server.js"
   },
+  "engines": {
+    "node": ">=18 <21"
+  },
   "dependencies": {
-    "@shopify/shopify-api": "^11.1.0",
-    "@shopify/shopify-app-express": "^2.1.0",
-    "@shopify/shopify-app-session-storage-mongodb": "^1.1.0",
+    "@shopify/shopify-api": "^11.3.0",
+    "@shopify/shopify-app-express": "^2.2.0",
+    "@shopify/shopify-app-session-storage-mongodb": "1.0.3",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
