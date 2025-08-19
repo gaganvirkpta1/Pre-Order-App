@@ -7,7 +7,10 @@ import crypto from 'crypto';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { shopifyApp, LATEST_API_VERSION } from '@shopify/shopify-app-express';
+import shopifyAppExpress from '@shopify/shopify-app-express';
+import { LATEST_API_VERSION } from '@shopify/shopify-api';
+const { shopifyApp } = shopifyAppExpress;
+
 import { MemorySessionStorage } from '@shopify/shopify-app-session-storage-memory';
 
 const __filename = fileURLToPath(import.meta.url);
